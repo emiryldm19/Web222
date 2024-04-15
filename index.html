@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1 Race Schedule</title>
+    <link rel="stylesheet" href="style.css"> <!-- Ensure this path is correct -->
+</head>
+<body>
+    <div class="container">
+        <h1>F1 Race Schedule</h1>
+        <div class="input-group">
+            <input type="text" id="yearInput" placeholder="Enter Year e.g., 2023">
+            <button onclick="fetchRaceSchedule()">Get Schedule</button>
+        </div>
+        <table id="resultsTable" style="display: none;">
+            <thead>
+                <tr>
+                    <th>Season</th>
+                    <th>Round</th>
+                    <th>Race Name</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Country</th>
+                    <th>URL</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Race data will be populated here -->
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
